@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Daftar Barang</h1>
+<ul>
+{% for barang in barang %}
+<li>{{ barang.nama }} - Stok: {{ barang.stok }} - Harga Jual: Rp{{ barang.harga_jual }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
